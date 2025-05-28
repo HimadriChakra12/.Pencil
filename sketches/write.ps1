@@ -7,5 +7,9 @@ $graphites = @(
 )
 
 foreach ($graphite in $graphites){
-        New-item -itemtype SymbolicLink -path "$($graphite.Path)" -target  "$pencil/$($graphite.get)" -force
+    Get-childItem -path "$pencil"
+    $read = read-host "Have Graphite for $($graphite.Name)"
+    switch ($read){
+        y{New-item -itemtype SymbolicLink -path "$($graphite.Path)" -target  "$pencil/$($graphite.get)" -force}
+        n{write-host "No Graphites found for "$($graphite.Path)"} 
 }
