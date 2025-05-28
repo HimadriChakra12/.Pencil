@@ -1,1 +1,2 @@
-
+cd .graphite
+git push
