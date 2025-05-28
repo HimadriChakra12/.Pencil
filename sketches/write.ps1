@@ -7,9 +7,5 @@ $graphites = @(
 )
 
 foreach ($graphite in $graphites){
-    if(test-path $($graphite.Path)) {
         New-item -itemtype SymbolicLink -path "$($graphite.Path)" -target  "$pencil/$($graphite.get)" -force
-    } else {
-        Write-Host "No Graphite of $($graphite.Name): $_" -ForegroundColor Red
-    }
 }
