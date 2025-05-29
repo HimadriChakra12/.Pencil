@@ -1,2 +1,2 @@
-cd .graphite
+cd ~/.graphite
 git push
