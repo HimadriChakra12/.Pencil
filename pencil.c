@@ -23,7 +23,7 @@ void run_ps_script(const char *script_name, int run_as_admin) {
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
-        printf("\033[1;33mUsage: pencil <dot|write|sharp|erase|help>\033[0m\n");
+        printf("\033[1;33mUsage: pencil dot|write|sharp|erase|help\033[0m\n");
         return 1;
     }
 
@@ -34,7 +34,7 @@ int main(int argc, char *argv[]) {
     } else if (strcmp(argv[1], "sharp") == 0) {
         run_ps_script("sharp.ps1", 0);
     } else if (strcmp(argv[1], "erase") == 0) {
-        run_ps_script("erase.ps1", 0);
+        run_ps_script("erase.ps1", 1);
     } else if (strcmp(argv[1], "help") == 0) {
         printf("\033[1;36mdot: copy configs\033[0m\n");
         printf("\033[1;36mwrite: make symlinks\033[0m\n");
