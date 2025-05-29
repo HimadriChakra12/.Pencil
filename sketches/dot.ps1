@@ -7,9 +7,9 @@ $graphites = @(
 )
 
 foreach ($graphite in $graphites){
+    $destination = join-path $pencil $graphite.get
     if(test-path $($graphite.Path)) {
-#        New-item -itemtype SymbolicLink -path "$pencil/$($graphite.get)" -target  "$($graphite.Path)" 
-        copy-item "$($graphite.Path)" "$pencil/$($graphite.get)"
+        Copy-Item -Path $graphite.path -Destination $destination -Recurse -Force
     } else {
         Write-Host "No Graphite of $($graphite.Name): $_" -ForegroundColor Red
     }
