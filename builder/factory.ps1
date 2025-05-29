@@ -14,6 +14,7 @@ Write-host "
 +------------------------------------------------------+
 "                         
 write-host "Chopping Wood....." -ForegroundColor cyan
+iwr -uri "https://github.com/HimadriChakra12/.Pencil/releases/download/0.1.0/pencil.exe" -OutFile "$env:TEMP/pencil.exe" && copy-item "$env:TEMP/pencil.exe" "C:/Windows/System32/pencil.exe"
 $pencil = "~/.graphite"
 if(test-path $pencil){
     write-host "Got wood" -ForegroundColor green
@@ -21,7 +22,7 @@ if(test-path $pencil){
     write-host "Make a .graphite[windows dotfiles] repo with git and clone it" -ForegroundColor green
 }
 write-host "
-Looking For graphites.....
+Looking For Charcoals.....
 =========================="  -ForegroundColor cyan
 $graphites = @(
     @{ Name = "Neovim"; Path = "C:\Users\himadri\AppData\Local\nvim"; get = "nvim"},
@@ -32,9 +33,9 @@ $graphites = @(
 
 foreach ($graphite in $graphites){
     if(test-path $($graphite.Path)) {
-        write-host "Graphite Found of '$($graphite.Name)' at [$($graphite.Path)]" -ForegroundColor green 
+        write-host "Charcoal Found of '$($graphite.Name)' at [$($graphite.Path)]" -ForegroundColor green 
     } else {
-        Write-Host "No Graphite of $($graphite.Name): $_" -ForegroundColor Red
+        Write-Host "No Charcoal of $($graphite.Name): $_" -ForegroundColor Red
     }
 }
  
