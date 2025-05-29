@@ -10,15 +10,7 @@ void run_ps_script(const char *script_name, int run_as_admin) {
              "powershell -NoProfile -ExecutionPolicy Bypass -Command \"iwr -useb '%s%s' | iex\"",
              base_url, script_name);
 
-    if (run_as_admin) {
-        char elevated_command[1100];
-        snprintf(elevated_command, sizeof(elevated_command),
-                 "powershell Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \"iwr -useb %s%s | iex\"' -Verb RunAs",
-                 base_url, script_name);
-        system(elevated_command);
-    } else {
-        system(command);
-    }
+    system(command);
 }
 
 int main(int argc, char *argv[]) {
@@ -30,11 +22,11 @@ int main(int argc, char *argv[]) {
     if (strcmp(argv[1], "dot") == 0) {
         run_ps_script("dot.ps1", 0);
     } else if (strcmp(argv[1], "write") == 0) {
-        run_ps_script("write.ps1", 1);
+        run_ps_script("write.ps1", 0);
     } else if (strcmp(argv[1], "sharp") == 0) {
         run_ps_script("sharp.ps1", 0);
     } else if (strcmp(argv[1], "erase") == 0) {
-        run_ps_script("erase.ps1", 1);
+        run_ps_script("erase.ps1", 0);
     } else if (strcmp(argv[1], "help") == 0) {
         printf("\033[1;36mdot: copy configs\033[0m\n");
         printf("\033[1;36mwrite: make symlinks\033[0m\n");

@@ -36,6 +36,7 @@ start-process powershell -ArgumentList '-noexit -NoProfile -ExecutionPolicy Bypa
 Copy and paste the code to Powershell. Run it will automatically install Pencil for you.
 
 ## Usage
+[use Admin Previledge]
 0. Builder/factory.ps1
 
     It will install the program and find Charcoals[preinstalled configs] of programs. 
