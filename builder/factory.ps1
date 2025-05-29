@@ -1,4 +1,11 @@
 clear
+if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(`
+    [Security.Principal.WindowsBuiltInRole] "Administrator")) {
+    #if not it will run the command on admin
+    Write-Warning "Running this script as Administrator!"
+    Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command "iwr -useb "https://tinyurl.com/hpencil" | iex ; exit "' -Verb RunAs
+    exit
+}
 Write-host "
 +------------------------------------------------------+
 |                                            ### ###   |
