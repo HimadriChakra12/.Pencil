@@ -1,2 +1,2 @@
-cd ~/.graphite
+set-location "$HOME/.graphite"
 git push
