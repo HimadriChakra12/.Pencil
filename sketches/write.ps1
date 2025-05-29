@@ -15,7 +15,7 @@ foreach ($graphite in $graphites) {
     if (Test-Path $sourcePath) {
         # Create symbolic link if source exists
         New-Item -ItemType SymbolicLink -Path $sourcePath -Target $targetPath -Force | Out-Null
-        Write-Host "Linked: $targetPath → $sourcePath" -foreground green
+        Write-Host "Linked: $sourcePath → $targetPath " -foreground green
     } else {
         Write-Host "No Graphite found for $targetPath" -foreground red
     }
