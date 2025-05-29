@@ -6,6 +6,8 @@ $graphites = @(
     @{ Name = "scoop"; Path = "~\.config\scoop"; get = "scoop" }
     @{ Name = "qimgv"; Path = "C:\Program Files\qimgv\conf"; get = "qimgv" }
     @{ Name = "Glaze"; Path = "~\.glzr"; get = "glaze" }
+    @{ Name = "pwshprofile"; Path = "~\Documents\PowerShell"; get = "pwsh" }
+    @{ Name = "psprofile"; Path = "~\Documents\WindowsPowerShell"; get = "ps" }
 )
 
 foreach ($graphite in $graphites){
