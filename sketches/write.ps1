@@ -10,6 +10,7 @@ $graphites = @(
     @{ Name = "Glaze"; Path = "~\.glzr"; get = "glaze" }
     @{ Name = "pwshprofile"; Path = "~\Documents\PowerShell"; get = "pwsh" }
     @{ Name = "psprofile"; Path = "~\Documents\WindowsPowerShell"; get = "ps" }
+    @{ Name = "Windows Terminal"; Path = "~\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\"; get = "terminal" }
 )
 
 foreach ($graphite in $graphites) {
