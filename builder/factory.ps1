@@ -21,8 +21,9 @@ Write-host "
 +------------------------------------------------------+
 "                         
 write-host "Chopping Wood....." -ForegroundColor cyan
-iwr -uri "https://github.com/HimadriChakra12/.Pencil/releases/download/0.2.0/pencil.exe" -OutFile "$env:TEMP/pencil.exe" ; copy-item "$env:TEMP/pencil.exe" "C:/Windows/System32/pencil.exe"
-iwr -uri "https://github.com/HimadriChakra12/.Pencil/releases/download/0.2.0/pen.exe" -OutFile "$env:TEMP/pen.exe" ; copy-item "$env:TEMP/pen.exe" "C:/Windows/System32/pen.exe"
+iwr -uri "https://github.com/HimadriChakra12/.Pencil/releases/download/0.3.0/pencil.exe" -OutFile "$env:TEMP/pencil.exe" ; copy-item "$env:TEMP/pencil.exe" "C:/Windows/System32/pencil.exe"
+iwr -uri "https://github.com/HimadriChakra12/.Pencil/releases/download/0.3.0/pen.exe" -OutFile "$env:TEMP/pen.exe" ; copy-item "$env:TEMP/pen.exe" "C:/Windows/System32/pen.exe"
+winget install wget
 $pencil = "~/.graphite"
 if(test-path $pencil){
     write-host "Got wood" -ForegroundColor green
