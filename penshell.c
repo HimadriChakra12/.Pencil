@@ -20,7 +20,7 @@ void run_ps_script(const char *script_name) {
     const char *base_url = "https://github.com/HimadriChakra12/.Pencil/raw/refs/heads/master/sketches/";
 
     snprintf(command, sizeof(command),
-         "wget -q '%s%s' -O /tmp/%s && powershell -NoProfile -ExecutionPolicy Bypass -File /tmp/%s",
+        "powershell -NoProfile -ExecutionPolicy Bypass -Command \"iwr -useb '%s%s' | iex\"",
         base_url, script_name);
 
     system(command);
@@ -32,10 +32,10 @@ void clear_screen() {
 
 void start_shell() {
     char input[128];
-    printf("\033[1;35m[Pen]\033[0m Type 'dot', 'write', 'sharp', 'erase', or 'fluid'\n");
+    printf("\033[1;35m[Pen]\033[0m Type 'write', 'sharp', 'erase', or 'fluid'\n");
 
     while (1) {
-        printf("\033[1;32mpenshell>\033[0m ");
+        printf("\033[1;32mpen>\033[0m ");
         if (!fgets(input, sizeof(input), stdin)) break;
 
         input[strcspn(input, "\r\n")] = 0;

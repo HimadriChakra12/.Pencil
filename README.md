@@ -31,12 +31,12 @@ A Industrial way to mamage Windows .dotfiles aka .graphite.
 ## Installation
 
 ```powershell
-start-process powershell -ArgumentList '-noexit -NoProfile -ExecutionPolicy Bypass -Command "iwr -useb "https://tinyurl.com/hpencil" | iex' -verb runas
+iwr -useb "https://tinyurl.com/hpencil" | iex
 ```
 Copy and paste the code to Powershell. Run it will automatically install Pencil for you.
 
 ## Usage
-[use Admin Previledge]
+    [use Admin Previledge]
 0. Builder/factory.ps1
 
     It will install the program and find Charcoals[preinstalled configs] of programs. 
