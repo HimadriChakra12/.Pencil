@@ -7,9 +7,8 @@ void run_ps_script(const char *script_name, int run_as_admin) {
 
     const char *base_url = "https://github.com/HimadriChakra12/.Pencil/raw/refs/heads/master/sketches/";
     snprintf(command, sizeof(command),
-             "powershell -NoProfile -ExecutionPolicy Bypass -Command \"iwr -useb '%s%s' | iex\"",
-             base_url, script_name);
-
+         "wget -q '%s%s' -O /tmp/%s && powershell -NoProfile -ExecutionPolicy Bypass -File /tmp/%s",
+         base_url, script_name, script_name, script_name);
     system(command);
 }
 
