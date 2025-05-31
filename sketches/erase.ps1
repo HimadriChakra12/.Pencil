@@ -10,7 +10,7 @@
     #@{ Name = "psprofile"; Path = "~\Documents\WindowsPowerShell"; get = "ps" },
     #@{ Name = "Windows Terminal"; Path = "~\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\"; get = "terminal" }
 #)
-Invoke-Expression (iwr "https://raw.githubusercontent.com/you/.Pencil/main/graphites.ps1").Content
+Invoke-Expression (iwr "https://raw.githubusercontent.com/HimadriChakra12/.Pencil/main/graphites.ps1").Content
 
 foreach ($graphite in $graphites){
     if(test-path $($graphite.Path)) {
