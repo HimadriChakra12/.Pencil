@@ -1,8 +1,5 @@
 # .pencil
 A Industrial way to mamage Windows .dotfiles aka .graphite.
-
-    Just [dot], [erase], [write], [sharp] 
-
 ```powershell
 +------------------------------------------------------+
 |                                            ### ###   |
