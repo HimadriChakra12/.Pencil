@@ -13,7 +13,7 @@ $graphites = @(
 
 foreach ($graphite in $graphites){
     if(test-path $($graphite.Path)) {
-        remove-item "$($graphite.Path)" -force
+        remove-item "$($graphite.Path)" -force -recurse
     } else {
         Write-Host "No Graphite of $($graphite.Name): $_" -ForegroundColor Red
     }
