@@ -14,10 +14,15 @@ $graphites = @(
 
 foreach ($graphite in $graphites){
     $destination = join-path $pencil $graphite.get
-    if(test-path $($graphite.Path)) {
-        Write-host "Copying Graphite of $($graphite.Name)"
-        Copy-Item -Path $graphite.path -Destination $destination -Recurse -Force
-    } else {
-        Write-Host "No Graphite of $($graphite.Name): $_" -ForegroundColor Red
-    }
+        if(test-path $($graphite.Path)) {
+            if(test-path $destination) {
+                write-host "Already a Graphite"
+            } else{
+                Write-host "Copying Charcoal of $($graphite.Name)"
+                    Copy-Item -Path $graphite.path -Destination $destination -Recurse -Force
+            }
+        }else {
+            Write-Host "No Charcoal of $($graphite.Name): $_" -ForegroundColor Red
+        }
 }
+Write-host "Making graphite has completed"
