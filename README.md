@@ -25,20 +25,31 @@ iwr -useb "https://tinyurl.com/hpencil" | iex
 Copy and paste the code to Powershell. Run it will automatically install Pencil for you.
 
 ## Usage
-1. sketches/dot.ps1
+write `pencil` to use the command or `pen` to enter the shell mode. Using as admin privillages is must. So install and use `gsudo`. 
+```
+sudo pencil [write]/[erase]/[sharp]
+```
+or
+```
+sudo pen
+```
 
-    Copies the charcoals
+1. sketches/dot.ps1:
 
-2. sketches/erase.ps1
+    iwr -useb "https://tinyurl.com/hpencil" | iex
 
-    Remove the Charcoals
+Copies the charcoals.
 
-4. sketches/write.ps1
+2. sketches/erase.ps1:
 
-    This automatically find your Charcoals in the .graphite folder and make a symlink to make it a Graphite.
+Remove the Charcoals.
 
-6. sketches/sharp.ps1
+3. sketches/write.ps1:
 
-    Push .graphite
+This automatically find your Charcoals in the .graphite folder and make a symlink to make it a Graphite.
+
+4. sketches/sharp.ps1:
+
+Push .graphite.
 
 
