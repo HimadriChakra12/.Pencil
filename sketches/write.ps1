@@ -3,7 +3,6 @@ $pencil = Join-Path $HOME ".graphite"
 $graphites = @(
     @{ Name = "Neovim"; Path = "~\AppData\Local\nvim"; get = "nvim" },
     @{ Name = "Github Cli"; Path = "~\AppData\Roaming\GitHub CLI"; get = "Github Cli" },
-    @{ Name = "Lazygit"; Path = "~\AppData\Local\lazygit"; get = "lazygit" },
     @{ Name = "Sumatra PDF"; Path = "~\AppData\Local\SumatraPDF"; get = "SumatraPDF" }
     @{ Name = "yasb"; Path = "~\.config\yasb"; get = "yasb" },
     @{ Name = "scoop"; Path = "~\.config\scoop"; get = "scoop" },
