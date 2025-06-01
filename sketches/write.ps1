@@ -13,5 +13,3 @@ foreach ($graphite in $graphites) {
         Write-Host "No Graphite found for $targetPath" -foreground red
     }
 }
-
-Start-Sleep -Seconds 30
