@@ -22,7 +22,7 @@ iwr -useb "https://tinyurl.com/hpencil" | iex
 Copy and paste the code to Powershell. Run it will automatically install Pencil for you.
 
 ## Usage
-write `pencil` to use the command or `pen` to enter the shell mode. Using as admin privillages is must. So install and use `gsudo`. 
+write `pencil` to use the command or `pen` to enter the shell mode. Using as admin privillages is must. So install and use `[gsudo](https://github.com/gerardog/gsudo#installation)`. 
 ```
 sudo pencil [write]/[erase]/[sharp]
 ```
