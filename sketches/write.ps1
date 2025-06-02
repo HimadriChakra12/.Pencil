@@ -8,7 +8,7 @@ foreach ($graphite in $graphites) {
     if (Test-Path $sourcePath) {
         # Create symbolic link if source exists
         New-Item -ItemType SymbolicLink -Path $targetPath -Target $sourcePath -Force | Out-Null
-        Write-Host "Linked: $sourcePath → $targetPath " -foreground green
+        Write-Host "Created Pencil $($graphite.get) → $targetPath 8>" -foreground green
     } else {
         Write-Host "No Graphite found for $targetPath" -foreground red
     }
