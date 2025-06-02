@@ -33,7 +33,7 @@ sudo pen
 
 1. sketches/dot.ps1: Copies the charcoals.
 ```
-iwr -useb "https://tinyurl.com/hpencil" | iex
+iwr -useb "https://tinyurl.com/pencildot" | iex
 ```
 2. sketches/erase.ps1: Remove the Charcoals.
 3. sketches/write.ps1: This automatically find your Charcoals in the .graphite folder and make a symlink to make it a Graphite.
