@@ -10,6 +10,7 @@ $Graphites = @(
     @{ Name = "pwshprofile"; Path = "$env:USERPROFILE\Documents\PowerShell"; Get = "pwsh" },
     @{ Name = "psprofile"; Path = "$env:USERPROFILE\Documents\WindowsPowerShell"; Get = "ps" },
     @{ Name = "Windows Terminal"; Path = "$env:USERPROFILE\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\"; Get = "terminal" }
-    @{ Name = "Winget"; Path = "C:\Users\himadri\AppData\Local\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\settings.json"; Get = "Winget/settings.json" }
+    @{ Name = "Winget"; Path = "$env:USERPROFILE\AppData\Local\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\settings.json"; Get = "Winget/settings.json" }
+    @{ Name = "Visual Studio Code"; Path = "$env:USERPROFILE\AppData\Roaming\Code\User\settings.json"; Get = "Code/settings.json" }
 )
 
