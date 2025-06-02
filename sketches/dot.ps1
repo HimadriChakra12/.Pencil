@@ -5,7 +5,7 @@ foreach ($graphite in $graphites){
     $destination = join-path $pencil $graphite.get
         if(test-path $($graphite.Path)) {
             if(test-path $destination) {
-                write-host "Already a Graphite"
+                write-host "Already a Graphite" -ForegroundColor green
             } else{
                 Write-host "Copying Charcoal of $($graphite.Name)"
                     Copy-Item -Path $graphite.path -Destination $destination -Recurse -Force
@@ -14,4 +14,4 @@ foreach ($graphite in $graphites){
             Write-Host "No Charcoal of $($graphite.Name): $_" -ForegroundColor Red
         }
 }
-Write-host "Making graphite has completed"
+Write-host "Making graphite has completed" -ForegroundColor cyan
