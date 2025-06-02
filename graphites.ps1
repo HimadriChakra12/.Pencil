@@ -11,6 +11,6 @@ $Graphites = @(
     @{ Name = "psprofile"; Path = "$env:USERPROFILE\Documents\WindowsPowerShell"; Get = "ps" },
     @{ Name = "Windows Terminal"; Path = "$env:USERPROFILE\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\"; Get = "terminal" }
     @{ Name = "Winget"; Path = "C:\Users\himadri\AppData\Local\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\settings.json"; Get = "Winget/settings.json" }
-    @{ Name = "Windows Terminal"; Path = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Themes\CachedFiles"; Get = "Wallpaper" }
+    @{ Name = "Wallpaper"; Path = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Themes\CachedFiles"; Get = "Wallpaper" }
 )
 
