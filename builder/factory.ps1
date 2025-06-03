@@ -23,6 +23,7 @@ Write-host "
 write-host "Chopping Wood....." -ForegroundColor cyan
 iwr -uri "https://github.com/HimadriChakra12/.Pencil/releases/download/1.0.0/pencil.exe" -OutFile "$env:TEMP/pencil.exe" ; copy-item "$env:TEMP/pencil.exe" "C:/Windows/System32/pencil.exe"
 iwr -uri "https://github.com/HimadriChakra12/.Pencil/releases/download/1.0.0/pen.exe" -OutFile "$env:TEMP/pen.exe" ; copy-item "$env:TEMP/pen.exe" "C:/Windows/System32/pen.exe"
+PowerShell -Command "Set-ExecutionPolicy RemoteSigned -scope Process; [Net.ServicePointManager]::SecurityProtocol = 'Tls12'; iwr -useb https://raw.githubusercontent.com/gerardog/gsudo/master/installgsudo.ps1 | iex"
 $pencil = "~/.graphite"
 if(test-path $pencil){
     write-host "Got wood" -ForegroundColor green
