@@ -11,13 +11,13 @@ foreach ($graphite in $graphites){
                 Write-host "Copying Charcoal of $($graphite.Name)"
                     if ($graphite.dir -eq $true){
                         if(Test-path $mkd){
-                            Copy-Item -Path $graphite.path -Destination $destination -Recurse -Force
+                            Copy-Item  $graphite.path -Destination $destination -Recurse -Force
                         } else{
                             mkdir $mkd
-                                Copy-Item -Path $graphite.path -Destination $destination -Recurse -Force
+                                Copy-Item  $graphite.path -Destination $destination -Recurse -Force
                         }
                     } else{
-                        Copy-Item -Path $graphite.path -Destination $destination -Recurse -Force
+                        Copy-Item  $graphite.path -Destination $destination -Recurse -Force
                     }
             }
         } else {
