@@ -6,7 +6,7 @@ foreach ($graphite in $graphites){
     $mkd = join-path $pencil $graphite.got
         if(test-path $($graphite.Path)) {
             if(test-path $destination) {
-                write-host "Already a Graphite" -ForegroundColor green
+                write-host "Already a Graphite $($graphite.Name)" -ForegroundColor green
             } else{
                 Write-host "Copying Charcoal of $($graphite.Name)"
                     if ($graphite.dir -eq $true){
