@@ -5,6 +5,7 @@ $Graphites = @(
     @{ Name = "Sumatra PDF"; Path = "$env:USERPROFILE\AppData\Local\SumatraPDF"; Get = "SumatraPDF"; dir = $false; Got = "SumatraPDF" },
     @{ Name = "yasb"; Path = "$env:USERPROFILE\.config\yasb"; Get = "yasb"; dir = $false; Got = "yasb" },
     @{ Name = "scoop"; Path = "$env:USERPROFILE\.config\scoop"; Get = "scoop"; dir = $false; Got = "scoop" },
+    @{ Name = "fastfetch"; Path = "$env:USERPROFILE\.config\fastfetch"; Get = "fastfetch"; dir = $false; Got = "fastfetch" },
     @{ Name = "qimgv"; Path = "C:\Program Files\qimgv\conf"; Get = "qimgv"; dir = $false; Got = "qimgv" },
     @{ Name = "Glaze"; Path = "$env:USERPROFILE\.glzr"; Get = "glaze"; dir = $false; Got = "glaze" },
     @{ Name = "pwshprofile"; Path = "$env:USERPROFILE\Documents\PowerShell"; Get = "pwsh"; dir = $false; Got = "pwsh" },
