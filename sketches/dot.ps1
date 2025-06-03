@@ -9,7 +9,7 @@ foreach ($graphite in $graphites){
                 write-host "Already a Graphite" -ForegroundColor green
             } else{
                 Write-host "Copying Charcoal of $($graphite.Name)"
-                    if ($($graphite.dir) -eq true){
+                    if ($graphite.dir -eq $true){
                         if(Test-path $mkd){
                             Copy-Item -Path $graphite.path -Destination $destination -Recurse -Force
                         } else{
