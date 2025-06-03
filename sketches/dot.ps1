@@ -3,14 +3,24 @@ Invoke-Expression (iwr "https://raw.githubusercontent.com/HimadriChakra12/.Penci
 
 foreach ($graphite in $graphites){
     $destination = join-path $pencil $graphite.get
+    $mkd = join-path $destination $graphite.got
         if(test-path $($graphite.Path)) {
             if(test-path $destination) {
                 write-host "Already a Graphite" -ForegroundColor green
             } else{
                 Write-host "Copying Charcoal of $($graphite.Name)"
-                    Copy-Item -Path $graphite.path -Destination $destination -Recurse -Force
+                    if ($($graphite.dir) -eq true){
+                        if(Test-path $mkd){
+                            Copy-Item -Path $graphite.path -Destination $destination -Recurse -Force
+                        } else{
+                            mkdir $mkd
+                                Copy-Item -Path $graphite.path -Destination $destination -Recurse -Force
+                        }
+                    } else{
+                        Copy-Item -Path $graphite.path -Destination $destination -Recurse -Force
+                    }
             }
-        }else {
+        } else {
             Write-Host "No Charcoal of $($graphite.Name): $_" -ForegroundColor Red
         }
 }
