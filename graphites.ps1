@@ -1,7 +1,6 @@
 # .Pencil/graphites.ps1
 $Graphites = @(
     @{ Name = "Neovim"; Path = "$env:USERPROFILE\AppData\Local\nvim"; Get = "nvim"; dir = $false; Got = "nvim" },
-    @{ Name = "lazygit"; Path = "$env:USERPROFILE\AppData\Local\lazygit\config.yml"; Get = "lazygit/config.yml"; dir = $true; Got = "lazygit" },
     @{ Name = "Github Cli"; Path = "$env:USERPROFILE\AppData\Roaming\GitHub CLI"; Get = "Github Cli"; dir = $false; Got = "Github Cli" },
     @{ Name = "Sumatra PDF"; Path = "$env:USERPROFILE\AppData\Local\SumatraPDF"; Get = "SumatraPDF"; dir = $false; Got = "SumatraPDF" },
     @{ Name = "yasb"; Path = "$env:USERPROFILE\.config\yasb"; Get = "yasb"; dir = $false; Got = "yasb" },
