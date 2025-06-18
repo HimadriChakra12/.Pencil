@@ -15,6 +15,8 @@ A Industrial way to mamage Windows .dotfiles aka .graphite.
 +------------------------------------------------------+
 ```
 ## Installation
+You can install [wheat](https://github.com/HimadriChakra12/wheat) and install it from there.
+Or,
 
 ```powershell
 iwr -useb "https://tinyurl.com/hpencil" | iex
@@ -22,7 +24,7 @@ iwr -useb "https://tinyurl.com/hpencil" | iex
 Copy and paste the code to Powershell. Run it will automatically install Pencil for you.
 
 ## Usage
-write `pencil` to use the command or `pen` to enter the shell mode. Using as admin privillages is must. So install and use [gsudo](https://github.com/gerardog/gsudo#installation). 
+write `pencil` to use the command or `pen` to enter the shell mode. Using as admin privillages is must. So installs and uses [gsudo](https://github.com/gerardog/gsudo#installation). 
 ```
 sudo pencil [write]/[erase]/[sharp]
 ```
