@@ -14,5 +14,6 @@ $Graphites = @(
     @{ Name = "Winget"; Path = "$env:USERPROFILE\AppData\Local\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\settings.json"; Get = "Winget/settings.json"; dir = $true; Got = "Winget" }
     @{ Name = "Visual Studio Code"; Path = "$env:USERPROFILE\AppData\Roaming\Code\User\settings.json"; Get = "Code/settings.json"; dir = $true; Got = "Code" }
     @{ Name = "Swiss Package"; Path = "C:\farm\wheats\Swissknife\package.json"; Get = "Swissknife\package.json"; dir = $true; Got = "Swissknife" }
+    @{ Name = "jd2 cfg"; Path = "C:\Program Files\JDownloader\cfg"; Get = "JDownloader2"; dir = $false; Got = "JDownloader2" }
 )
 
