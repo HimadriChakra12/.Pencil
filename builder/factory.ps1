@@ -30,7 +30,7 @@ $docs = @(
 )
 if (-not (test-path $path)){
     mkdir $path | out-null
-    mkdir $path/maker | out-null
+    mkdir "$($path)/maker" | out-null
 }
 
 foreach ($doc in $docs){
