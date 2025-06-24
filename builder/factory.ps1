@@ -34,10 +34,10 @@ if (-not (test-path $path)){
 }
 
 if (-not (test-path $pathm)){
-    mkdir $path | out-null
+    mkdir $pathm | out-null
 }
 foreach ($doc in $docs){
-    iwr -uri $doc.url -OutFile $doc.file 
+    iwr -uri $doc.url -OutFile $doc.file
 }
 
 try{
