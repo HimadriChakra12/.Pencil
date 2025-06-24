@@ -22,6 +22,7 @@ Write-host "
 "
 
 $path = "C:/farm/wheats/pencil"
+$pathm = "C:/farm/wheats/pencil/maker"
 
 $docs = @(
     @{url = "https://github.com/HimadriChakra12/.Pencil/releases/download/1.0.0/pencil.exe"; outfile = "$env:TEMP/pencil.exe"; file = "C:/farm/wheats/pencil/pencil.exe"}
@@ -30,9 +31,11 @@ $docs = @(
 )
 if (-not (test-path $path)){
     mkdir $path | out-null
-    mkdir "$($path)/maker" | out-null
 }
 
+if (-not (test-path $pathm)){
+    mkdir $path | out-null
+}
 foreach ($doc in $docs){
     iwr -uri $doc.url -OutFile $doc.file 
 }
