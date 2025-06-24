@@ -30,11 +30,11 @@ $docs = @(
 )
 if (-not (test-path $path)){
     mkdir $path | out-null
+    mkdir $path/maker | out-null
 }
 
 foreach ($doc in $docs){
     iwr -uri $doc.url -OutFile $doc.file 
-    copy-item $doc.outfile $doc.file -force
 }
 
 try{
