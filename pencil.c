@@ -15,7 +15,7 @@ void run_ps_script(const char *script_name, int run_as_admin) {
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
-        printf("\033[1;33mUsage: pencil write|sharp|erase|help\033[0m\n");
+        printf("\033[1;33mUsage: pencil dot > erase > write > sharp > help\033[0m\n");
         return 1;
     }
 
@@ -25,11 +25,14 @@ int main(int argc, char *argv[]) {
         run_ps_script("sharp.ps1", 0);
     } else if (strcmp(argv[1], "erase") == 0) {
         run_ps_script("erase.ps1", 0);
+    } else if (strcmp(argv[1], "make") == 0) {
+        run_ps_script("make.ps1", 0);
     } else if (strcmp(argv[1], "help") == 0) {
-        printf("\033[1;36mdot: copy configs\033[0m\n");
-        printf("\033[1;36mwrite: make symlinks\033[0m\n");
-        printf("\033[1;36msharp: push .graphite\033[0m\n");
-        printf("\033[1;36merase: remove .graphite\033[0m\n");
+        printf("\033[1;36m dot: copy configs\033[0m\n");
+        printf("\033[1;36m write: make symlinks\033[0m\n");
+        printf("\033[1;36m sharp: push .graphite\033[0m\n");
+        printf("\033[1;36m erase: remove .graphite\033[0m\n");
+        printf("\033[1;36m make: add context menu support for .graphite\033[0m\n");
     } else {
         printf("Unknown command: %s\n", argv[1]);
         return 1;

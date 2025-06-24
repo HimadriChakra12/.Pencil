@@ -32,7 +32,7 @@ void clear_screen() {
 
 void start_shell() {
     char input[128];
-    printf("\033[1;35m[Pen]\033[0m Type 'write', 'sharp', 'erase', or 'fluid'\n");
+    printf("\033[1;35m[Pen]\033[0m Type 'dot', 'write', 'sharp', 'erase', or 'fluid'\n");
 
     while (1) {
         printf("\033[1;32mpen>\033[0m ");
@@ -45,6 +45,7 @@ void start_shell() {
         else if (strcmp(input, "write") == 0) run_ps_script("write.ps1");
         else if (strcmp(input, "sharp") == 0) run_ps_script("sharp.ps1");
         else if (strcmp(input, "erase") == 0) run_ps_script("erase.ps1");
+        else if (strcmp(input, "make") == 0) run_ps_script("make.ps1");
 	    else if (strcmp(input, "clear") == 0) clear_screen();
         else if (strlen(input) > 0) printf("\033[1;31mUnknown command:\033[0m %s\n", input);
     }
