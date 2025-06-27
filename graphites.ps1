@@ -4,6 +4,7 @@ $Graphites = @(
     @{ Name = "Github Cli"; Path = "$env:USERPROFILE\AppData\Roaming\GitHub CLI"; Get = "Github Cli"; dir = $false; Got = "Github Cli" },
     @{ Name = "Sumatra PDF"; Path = "$env:USERPROFILE\AppData\Local\SumatraPDF"; Get = "SumatraPDF"; dir = $false; Got = "SumatraPDF" },
     @{ Name = "yasb"; Path = "$env:USERPROFILE\.config\yasb"; Get = "yasb"; dir = $false; Got = "yasb" },
+    @{ Name = "VS"; Path = "$env:USERPROFILE\.vscode"; Get = ".vscode"; dir = $false; Got = ".vscode" },
     @{ Name = "scoop"; Path = "$env:USERPROFILE\.config\scoop"; Get = "scoop"; dir = $false; Got = "scoop" },
     @{ Name = "fastfetch"; Path = "$env:USERPROFILE\.config\fastfetch"; Get = "fastfetch"; dir = $false; Got = "fastfetch" },
     @{ Name = "qimgv"; Path = "C:\Program Files\qimgv\conf"; Get = "qimgv"; dir = $false; Got = "qimgv" },
