@@ -19,5 +19,6 @@ $Graphites = @(
     @{ Name = "Swiss Package"; Path = "C:\farm\wheats\Swissknife\package.json"; Get = "Swissknife\package.json"; dir = $true; Got = "Swissknife" }
     @{ Name = "jd2 cfg"; Path = "C:\Program Files\JDownloader\cfg"; Get = "JDownloader2"; dir = $false; Got = "JDownloader2" }
     @{ Name = "mpv"; Path = "$env:USERPROFILE\AppData\Roaming\mpv"; Get = "mpv"; dir = $false; Got = "mpv" }
+    @{ Name = "startup"; Path = "$env:USERPROFILE\AppData\Microsoft\Windows\Start Menu\Programs\startup"; Get = "startup"; dir = $false; Got = "startup" }
 )
 
