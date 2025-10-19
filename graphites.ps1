@@ -3,7 +3,7 @@ $Graphites = @(
     @{ Name = "Neovim"; Path = "$env:USERPROFILE\AppData\Local\nvim"; Get = "nvim"; dir = $false; Got = "nvim" },
     @{ Name = "Github Cli"; Path = "$env:USERPROFILE\AppData\Roaming\GitHub CLI"; Get = "Github Cli"; dir = $false; Got = "Github Cli" },
     @{ Name = "Sumatra PDF"; Path = "$env:USERPROFILE\AppData\Local\SumatraPDF"; Get = "SumatraPDF"; dir = $false; Got = "SumatraPDF" },
-    @{ Name = "Sumatra PDF"; Path = "C:\Users\IT\swiss\sumatra\SumatraPDF-settings.txt"; Get = "SumatraPDF"; dir = $false; Got = "SumatraPDF" },
+    @{ Name = "Sumatra PDF"; Path = "$env:USERPROFILE\swiss\sumatra\SumatraPDF-settings.txt"; Get = "SumatraPDF"; dir = $true; Got = "SumatraPDF" },
     @{ Name = "yasb"; Path = "$env:USERPROFILE\.config\yasb"; Get = "yasb"; dir = $false; Got = "yasb" },
     @{ Name = "VS"; Path = "$env:USERPROFILE\.vscode"; Get = ".vscode"; dir = $false; Got = ".vscode" },
     @{ Name = "scoop"; Path = "$env:USERPROFILE\.config\scoop"; Get = "scoop"; dir = $false; Got = "scoop" },
