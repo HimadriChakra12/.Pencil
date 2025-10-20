@@ -3,7 +3,6 @@ $Graphites = @(
     @{ Name = "Neovim"; Path = "$env:USERPROFILE\AppData\Local\nvim"; Get = "nvim"; dir = $false; Got = "nvim" },
     @{ Name = "Github Cli"; Path = "$env:USERPROFILE\AppData\Roaming\GitHub CLI"; Get = "Github Cli"; dir = $false; Got = "Github Cli" },
     @{ Name = "Sumatra PDF"; Path = "$env:USERPROFILE\AppData\Local\SumatraPDF"; Get = "SumatraPDF"; dir = $false; Got = "SumatraPDF" },
-    @{ Name = "Sumatra PDF"; Path = "$env:USERPROFILE\swiss\sumatra\SumatraPDF-settings.txt"; Get = "SumatraPDF/Sumatrapdf.txt"; dir = $true; Got = "SumatraPDF" },
     @{ Name = "yasb"; Path = "$env:USERPROFILE\.config\yasb"; Get = "yasb"; dir = $false; Got = "yasb" },
     @{ Name = "VS"; Path = "$env:USERPROFILE\.vscode"; Get = ".vscode"; dir = $false; Got = ".vscode" },
     @{ Name = "scoop"; Path = "$env:USERPROFILE\.config\scoop"; Get = "scoop"; dir = $false; Got = "scoop" },
@@ -21,5 +20,6 @@ $Graphites = @(
     @{ Name = "jd2 cfg"; Path = "C:\Program Files\JDownloader\cfg"; Get = "JDownloader2"; dir = $false; Got = "JDownloader2" }
     @{ Name = "mpv"; Path = "$env:USERPROFILE\AppData\Roaming\mpv"; Get = "mpv"; dir = $false; Got = "mpv" }
     @{ Name = "startup"; Path = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"; Get = "startup"; dir = $false; Got = "startup" }
+    @{ Name = "Sumatra PDF"; Path = "$env:USERPROFILE\swiss\sumatra\SumatraPDF-settings.txt"; Get = "SumatraPDF\Sumatrapdf.txt"; dir = $true; Got = "SumatraPDF" },
 )
 
