@@ -21,5 +21,6 @@ $Graphites = @(
     @{ Name = "mpv"; Path = "$env:USERPROFILE\AppData\Roaming\mpv"; Get = "mpv"; dir = $false; Got = "mpv" }
     @{ Name = "startup"; Path = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"; Get = "startup"; dir = $false; Got = "startup" }
     @{ Name = "Sumatra PDF"; Path = "$env:USERPROFILE\swiss\sumatra\SumatraPDF-settings.txt"; Get = "SumatraPDF\Sumatrapdf.txt"; dir = $true; Got = "SumatraPDF" }
+    @{ Name = ".winstate"; Path = "$env:USERPROFILE\.winstate"; Get = ".winstate"; dir = $false; Got = ".winstate" }
 )
 
